@@ -1,17 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import Pai from './componentes/Pai'
+import Filho from './componentes/Filho'
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <Pai nome="Carlos" sobrenome="Silva">
+        <Filho nome="Alberto"></Filho>
+        <Filho nome="Alfechado"></Filho>
+        <Filho nome="Moana"></Filho>
+    </Pai>
+    , document.querySelector("#root"))
